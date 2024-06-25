@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Completa el siguiente formulario</h1>
+    <form>
+      <p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" />
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" />
+      </p>
+      <p>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="password" />
+      </p>
+      <p>
+        <label for="sexo">Sexo:</label>
+        <select name="sexo">
+          <option value=""></option>
+          <option value="mujer">Mujer</option>
+          <option value="hombre">Hombre</option>
+          <option value="otro">Otro</option>
+        </select>
+      </p>
+      <div>
+        <label for="hobbies">Hobbies:</label>
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              name="hobbies[]"
+              value="jugar videojuegos"
+              id="jugar videosjuegos"
+            />
+            <label for="jugar videojuegos">Jugar videojuegos</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hobbies[]" value="leer" id="leer" />
+            <label for="leer">Leer</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="hobbies[]"
+              value="ejercitar"
+              id="ejercitar"
+            />
+            <label for="ejercitar">Ejercitar</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="hobbies[]"
+              value="cantar"
+              id="cantar"
+            />
+            <label for="cantar">Cantar</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="hobbies[]"
+              value="dibujar"
+              id="dibujar"
+            />
+            <label for="dibujar">Dibujar</label>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Comentarios</h3>
+        <label for="comentarios"></label>
+        <textarea placeholder="Comentarios"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+      </div>
+    </form>
+  </body>
+</html>
