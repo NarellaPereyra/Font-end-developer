@@ -1,0 +1,60 @@
+#body {
+    background-color: #617cc5;
+    font-family: oblique;
+    font-size: x-large;
+    margin: 20px;
+}
+
+#imgnare {
+    width: 25%;
+    border: 5px dotted #5f2d99b4;
+    margin: 10px;
+}
+
+h1 {
+    background-color: #5f2d996b;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: x-large;
+}
+
+.h3{
+    background-color: #5f2d996b;
+    display: flex;
+    justify-content: left;
+}
+
+.info {
+    background-color: #5f2d996b;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
+
+.series{
+    background-color: #5f2d996b;
+    display: flex;
+    padding-left: 30px; padding-right: 30px;
+    
+}
+
+.poster{
+    border: 5px solid #5f2d99b4;
+    width: 50%;
+
+}
+
+.musica{
+    background-color: #5f2d996b;
+    display: flex;
+    justify-content: left;
+}
+
+#parrafo{
+    margin: 10px;
+    margin-right: 20px;
+}
