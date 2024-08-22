@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio1</title>
+  </head>
+  <body class="fondo">
+    <p>
+      <button class="fondo" id="rojo" style="background-color: red;"></button>
+      <button class="fondo" id="azul" style="background-color: blue;"></button>
+      <button class="fondo" id="verde" style="background-color: green;"></button>
+    </p>
+<style>
+  
+  .fondo {
+        padding: 20px;
+        border: none;
+      }
+      .fondo.rojo {
+        background-color: red;
+      }
+      .fondo.azul {
+        background-color: blue;
+      }
+      .fondo.verde {
+        background-color: green;
+      }
+</style>
+    <script>
+      const fondo = document.getElementsByClassName("fondo")[0];
+      const rojo = document.getElementById('rojo');
+      const azul = document.getElementById('azul');
+      const verde = document.getElementById('verde');
+  
+      rojo.addEventListener('click', function() {
+            fondo.classList.add('rojo');
+        });
+        azul.addEventListener('click', function() {
+            fondo.classList.add('azul');
+        });
+        verde.addEventListener('click', function() {
+            fondo.classList.add('verde');
+        });
+  </script>
+  </body>
+</html>
