@@ -12,11 +12,11 @@
   <div>Caracteres: <span id="contar"> </span></div>
 
   <script>
-    var texto = document.getElementsById('texto');
-    var contar = document.getElementsById('contar');
+    var texto = document.getElementById('texto');
+    var contar = document.getElementById('contar');
 
     texto.addEventListener('keyup', function () {
-      contar.innerText = texto.value.lenght;
+      contar.innerText = texto.value.length;
     })
   </script>
 </body>
