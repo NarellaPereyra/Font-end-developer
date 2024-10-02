@@ -26,8 +26,43 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 //consulta a base de datos
-
+/*select
 pool.query("select * from empleados").then(function(resultados){
+  console.log(resultados)
+});*/
+
+/*insert
+var obj = {
+  nombre: 'Marta',
+  apellido: 'Ruíz',
+  trabajo: 'Programadora',
+  edad: '29',
+  salario: '8500',
+  mail: 'martaruiz@gmail.com'
+}
+
+pool.query('insert into empleados set ?',[obj]).then (function (resultados){
+  console.log (resultados)
+});*/
+
+/*delete
+var id_emp = 26;
+pool.query('delete from empleados where id_emp = ?', [id_emp]).then(function (resultados){
+  console.log(resultados)
+});*/
+
+/*update*/
+var id_emp = 25
+var obj = {
+  nombre: 'Leandro',
+  apellido: 'Rodriguez',
+  trabajo:'Especialista Multimedia',
+  edad: '48',
+  salario:'9000',
+  mail: 'learod@gmail.com'
+}
+
+pool.query('update empleados set ? where id_emp = ?', [obj, id_emp]). then(function(resultados){
   console.log(resultados)
 });
 
